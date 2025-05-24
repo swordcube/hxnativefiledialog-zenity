@@ -45,7 +45,8 @@
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_common.c" />
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_win.cpp" if="windows" />
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_cocoa.m" if="macos" />
-		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_gtk.c" if="linux" />
+		<!-- <file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_gtk.c" if="linux" /> -->
+		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_zenity.c" if="linux" />
 	</files>
 
 	<target id="haxe">
@@ -64,8 +65,8 @@
 		<vflag name="-framework" value="AppKit" if="macos" />
 
 		<section if="linux">
-			<lib name="-lgtk-3" />
-			<lib name="-lgdk-3" />
+			<!-- <lib name="-lgtk-3" />
+			<lib name="-lgdk-3" /> -->
 			<lib name="-lpangocairo-1.0" />
 			<lib name="-lpango-1.0" />
 			<lib name="-lharfbuzz" />
