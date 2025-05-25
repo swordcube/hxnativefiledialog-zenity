@@ -44,8 +44,8 @@
 		<compilerflag value="-DFTG_IGNORE_UNICODE" if="windows" />
 
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_common.c" />
-		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_win.cpp" if="windows" />
-		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_cocoa.m" if="macos" />
+		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/nfd_win.cpp" if="windows" />
+		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/nfd_cocoa.m" if="macos" />
 		<!-- <file name="${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/nfd_gtk.c" if="linux" /> -->
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/nfd_zenity.c" if="linux" />
 	</files>
