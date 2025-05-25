@@ -3,11 +3,11 @@
 	<pragma once="true" />
 
 	<files id="haxe">
-		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog/src/include" />
+		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/include" />
 	</files>
 
 	<files id="__main__">
-		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog/src/include" />
+		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/include" />
 	</files>
 
 	<files id="nativefiledialog">
@@ -37,7 +37,8 @@
 			<compilerflag value="-I/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
 		</section>
 
-		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog/src/include" />
+		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/include" />
+		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src" />
 		<compilerflag value="-I${haxelib:hxnativefiledialog}/project/nativefiledialog/src" />
 
 		<compilerflag value="-DFTG_IGNORE_UNICODE" if="windows" />
@@ -45,8 +46,8 @@
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_common.c" />
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_win.cpp" if="windows" />
 		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_cocoa.m" if="macos" />
-		<!-- <file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_gtk.c" if="linux" /> -->
-		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog/src/nfd_zenity.c" if="linux" />
+		<!-- <file name="${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/nfd_gtk.c" if="linux" /> -->
+		<file name="${haxelib:hxnativefiledialog}/project/nativefiledialog-ex/src/nfd_zenity.c" if="linux" />
 	</files>
 
 	<target id="haxe">

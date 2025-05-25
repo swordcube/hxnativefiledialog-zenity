@@ -15,6 +15,9 @@ import hxnativefiledialog.Types;
 @:unreflective
 extern class NFD
 {
+	@:native('NFD_SetDialogTitle')
+	static function SetDialogTitle(title:NFDConstCharStar_T):Void;
+
 	/**
 	 * Open a single file dialog.
 	 *
