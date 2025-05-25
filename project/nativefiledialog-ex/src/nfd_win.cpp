@@ -405,7 +405,7 @@ SetDefaultFile(IFileDialog* dialog, const char* defaultPath)
 /* public */
 
 void NFD_SetDialogTitle(const nfdchar_t* title) {
-    // CBA to figure this out for macOS right now
+    // CBA to figure this out for Windows right now
     // so it's just gonna be empty for now
 }
 
